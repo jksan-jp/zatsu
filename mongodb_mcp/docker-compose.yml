@@ -7,8 +7,7 @@ services:
     volumes:
       - mongodb_data:/data/db
       - ./data:/data
-      - ./scripts:/docker-entrypoint-initdb.d
+      - ./scripts:/scripts
     restart: unless-stopped
-
 volumes:
   mongodb_data:
